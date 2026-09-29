@@ -51,11 +51,11 @@ assets/img/favicon-180.png     apple-touch-icon, same method
 | the | 3:1 | 4.43 (9:16, f695) |
 | GROUP | 3:1 | 3.51 (1440×900, f080) |
 | Logo (non-text) | 3:1 | 13.52 |
-| Tagline (We Don’t Chase Noise) | 4.5:1 | 9.44 |
+| Tagline (We Build Brands That Last) | 4.5:1 | 9.44 |
 | Status line | 4.5:1 | 6.49 (844×390, f243) |
 | Button (rest, off-white) | 4.5:1 | 11.55 |
 | Button (hover/focus, brass) | 4.5:1 | 5.32 (1920×1080, f411) |
-| Pill | 4.5:1 | 6.12 |
+| Pill (removed 2026-09-29) | — | — |
 | Footer left / right | 4.5:1 | 4.72 / 4.75 |
 
 **Layout.** Screenshots at 1440×900, 1920×1080, 390×844 and 844×390 are in `qa/`. There is no horizontal overflow at any size, and nothing collides with the footer. The bars pad with `env(safe-area-inset-*)` on all four sides.
