@@ -23,7 +23,7 @@ assets/img/favicon-180.png     apple-touch-icon, same method
 | Item | Current value | Where to swap |
 |---|---|---|
 | Status line | `The Pour Is Underway` (renders uppercase; **ratified 2026-09-28**) | `index.html`: the `<p class="status">` |
-| Meta description (still open) | "The Concrete Group. Senior-led PR, communications and brand advisory. Coming soon." | `index.html` `<head>`, 3 places: `meta name="description"`, `og:description`, `twitter:description` (marked with a `[RATIFY]` comment) |
+| Meta description (revised 2026-09-29) | "The Concrete Group. Senior-led PR, communications and brand advisory. We build brands that last." | `index.html` `<head>`, 3 places: `meta name="description"`, `og:description`, `twitter:description` (marked with a comment). Page title: "The Concrete Group | PR & Brand Advisory" |
 
 ## Other open items
 
