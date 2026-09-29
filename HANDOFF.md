@@ -81,3 +81,22 @@ Frames 716–719 → 0–2 are continuous (`qa/seam9x16.jpg`). No loop logic was
 **Detector.** `impeccable detect`: no findings.
 
 **Not verified.** Real iOS Safari on a device: muted inline autoplay, no black flash at the loop point, the rotation swap. WebKit headless is the closest proxy and it passed, but check once on an iPhone before launch. The seam was checked by frame metrics and stills, not by watching 3 full cycles.
+
+## Update 2026-09-29: sunlit concrete, dark type
+
+- **Footage:** background replaced with "Concrete Sun Glisten POV" (1280×720, 15.04s source). A 1s crossfade loop was authored at the seam; the loop step fell from 23.4 to 3.8 against a typical 12.9.
+  - `hero-sun_16x9.mp4`: 5.3 MB.
+  - `hero-sun_9x16.mp4`: 1.95 MB, centre crop.
+  - Both CRF 29, faststart, 14.04s, silent.
+  - The 43 MB loop master is kept locally at `assets/video/hero-sun_LOOP_MASTER.mp4`; it is not committed.
+  - The original mixer footage is still in `assets/video/` for rollback.
+- **Colour:** the footage is bright (mean luma 155–171/255), so the type flipped to dark.
+  - Primary text is `--concrete-black`; secondary and footer text is `--n-700`.
+  - The logo is the approved ink version, `TCG_Logo_Main.png`.
+  - The scrim is now an off-white veil.
+- **Button:** hover/focus is now a concrete-black fill with off-white text and a brass border. The focus ring is concrete-black, because brass on a light ground fails 3:1.
+- **Removed:** the status line "The Pour Is Underway".
+- **Contrast:** measured against the *darkest* 2% of pixels under each element (the concrete joint lines), on the 6 brightest frames of each clip. Worst case per element:
+  - CONCRETE 4.05, the 4.25, GROUP 3.80, logo 4.20 (target 3:1).
+  - Tagline 5.51, button 5.24, footer 6.59 (target 4.5:1).
+- **Still dark footage:** `og-image.jpg` (the social card) still shows the dark mixer footage.
