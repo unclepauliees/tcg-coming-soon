@@ -100,3 +100,11 @@ Frames 716–719 → 0–2 are continuous (`qa/seam9x16.jpg`). No loop logic was
   - CONCRETE 4.05, the 4.25, GROUP 3.80, logo 4.20 (target 3:1).
   - Tagline 5.51, button 5.24, footer 6.59 (target 4.5:1).
 - **Still dark footage:** `og-image.jpg` (the social card) still shows the dark mixer footage.
+
+### Update 2026-09-29 (later): 30s clip
+- Background swapped to "Concrete Sun Glisten POV 30s".
+- **Speed:** the raw clip decelerated from a flow speed of 1.87 to 1.25. It was retimed to constant speed with `tools/retime_chunk.py`, giving 1.29–1.49 (median 1.34).
+- **Loop:** a 1s crossfade was authored at the seam. The result is 29.0s, and the seam step is 13.6 against a p95 of 14.5.
+- **Files:** `hero-sun30_16x9.mp4` (6.3 MB) and `hero-sun30_9x16.mp4` (2.4 MB), both CRF 29 and silent.
+- **Loop master:** kept locally at `assets/video/hero-sun30_LOOP_MASTER.mp4`.
+- **Contrast** (darkest 2% of pixels, 9 frames per clip): CONCRETE 4.14, the 3.49, GROUP 3.29, logo 4.22 (target 3:1); tagline 5.68, button 5.86, footer 4.83 (target 4.5:1).
