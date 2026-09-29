@@ -114,3 +114,19 @@ Frames 716–719 → 0–2 are continuous (`qa/seam9x16.jpg`). No loop logic was
 - **Contrast:** it reads by hue, but its luminance contrast against the sunlit concrete is about 1.6:1, below the WCAG 3:1 target for large text.
   - The darker brass `#836425`, used on light grounds in the capabilities deck, reaches about 1.3–1.7:1 against the darkest joint lines, so it doesn't fix the measure either.
   - Only near-black passes (4.1:1).
+
+### Update 2026-09-29: dark "dusk" look
+- **Copy:** the tagline now reads "We Don’t Chase Noise, / We Build Brands That Last." The second line is in brass. Meta and OG descriptions were updated to match.
+- **Footage:** the same 30s loop, colour-graded dark with ffmpeg:
+  - Grade: `curves=all='0/0 0.45/0.05 0.7/0.14 0.85/0.35 0.95/0.8 1/1',eq=saturation=0.7,colorbalance=bs=0.04:bm=0.02`.
+  - The curve crushes the mid-tones and leaves the highlights, so the sparkles stay bright and turn gold.
+  - Mean luma dropped from 168 to 39.
+  - Files: `hero-dusk_16x9.mp4` (5.4 MB) and `hero-dusk_9x16.mp4` (2.9 MB), both CRF 29.
+- **Colour:**
+  - Type is off-white and the logo is the reverse version. CONCRETE is back to off-white.
+  - Brass is used only as a highlight: the rule, the tagline's second line, the button border, and the hover fill.
+  - The scrim is a true-black veil.
+- **Social card:** `og-image-dusk.jpg`. The new filename forces platforms to re-scrape.
+- **Contrast:** measured against the 90th percentile of pixels under each element, across 15 frames.
+  - Target met everywhere except "the" on desktop (3.62), which sits in the sun hotspot.
+  - Against the brightest 2% of pixels (the individual sparkles), the low values are "the" and CONCRETE on desktop, and the brass line on mobile (3.96).
