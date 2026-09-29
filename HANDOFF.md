@@ -108,3 +108,9 @@ Frames 716–719 → 0–2 are continuous (`qa/seam9x16.jpg`). No loop logic was
 - **Files:** `hero-sun30_16x9.mp4` (6.3 MB) and `hero-sun30_9x16.mp4` (2.4 MB), both CRF 29 and silent.
 - **Loop master:** kept locally at `assets/video/hero-sun30_LOOP_MASTER.mp4`.
 - **Contrast** (darkest 2% of pixels, 9 frames per clip): CONCRETE 4.14, the 3.49, GROUP 3.29, logo 4.22 (target 3:1); tagline 5.68, button 5.86, footer 4.83 (target 4.5:1).
+
+### Update 2026-09-29: CONCRETE in brass
+- "CONCRETE" in the lockup is now brand brass (#C49A3C), as the client directed. This departs from the original rule that brass appears only on the rule, the dot and the button hover.
+- **Contrast:** it reads by hue, but its luminance contrast against the sunlit concrete is about 1.6:1, below the WCAG 3:1 target for large text.
+  - The darker brass `#836425`, used on light grounds in the capabilities deck, reaches about 1.3–1.7:1 against the darkest joint lines, so it doesn't fix the measure either.
+  - Only near-black passes (4.1:1).
