@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Concrete Group | Coming Soon</title>
+<!-- [RATIFY] meta description: also mirrored in og:description and twitter:description below -->
+<meta name="description" content="The Concrete Group. Senior-led PR, communications and brand advisory. Coming soon.">
+<link rel="canonical" href="https://theconcretegrp.com/">
+<meta name="theme-color" content="#1C1C1A">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://theconcretegrp.com/">
+<meta property="og:site_name" content="The Concrete Group">
+<meta property="og:title" content="The Concrete Group | Coming Soon">
+<meta property="og:description" content="The Concrete Group. Senior-led PR, communications and brand advisory. Coming soon.">
+<meta property="og:image" content="https://theconcretegrp.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Concrete Group">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Concrete Group | Coming Soon">
+<meta name="twitter:description" content="The Concrete Group. Senior-led PR, communications and brand advisory. Coming soon.">
+<meta name="twitter:image" content="https://theconcretegrp.com/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="preload" as="image" href="assets/img/poster_9x16.jpg" media="(orientation: portrait)">
+<link rel="preload" as="image" href="assets/img/poster_16x9.jpg" media="(orientation: landscape)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --concrete-black:#1C1C1A; --true-black:#0F0F0D; --brass:#C49A3C; --sage:#7D8B6D; --off-white:#ECEAE3; --logo-ink:#484848;
+  --n-300:#BAB6AB; --n-400:#908D83; --n-600:#4A4D45; --n-700:#333330;
+  --text-primary:var(--off-white); --text-secondary:var(--n-300); --text-muted-body:var(--n-400); --text-accent:var(--brass);
+  --font-display:"Archivo Black","Arial Black",sans-serif;
+  --font-display-light:"Archivo","Arial",sans-serif;
+  --font-eyebrow:"Space Mono","Courier New",monospace;
+  --font-body:"Inter",system-ui,sans-serif;
+  --ease-reveal:cubic-bezier(0,0,.2,1);
+  --ease-cursor:cubic-bezier(.22,1,.36,1);
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --sa-t:env(safe-area-inset-top,0px); --sa-r:env(safe-area-inset-right,0px);
+  --sa-b:env(safe-area-inset-bottom,0px); --sa-l:env(safe-area-inset-left,0px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html{background:var(--true-black);-webkit-text-size-adjust:100%}
+body{min-height:100vh;min-height:100svh;color:var(--text-primary);font-family:var(--font-body);background:var(--true-black);-webkit-font-smoothing:antialiased}
+::selection{background:var(--off-white);color:var(--true-black)}
+
+/* 1. Poster (frame 0) + video, full-bleed */
+.stage{position:fixed;inset:0;z-index:0;background:var(--true-black) url(assets/img/poster_16x9.jpg) center/cover no-repeat}
+@media (orientation:portrait){.stage{background-image:url(assets/img/poster_9x16.jpg)}}
+.stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease-reveal)}
+.stage video.is-playing{opacity:1}
+/* 2. Scrim: vertical ramp + soft darkening behind the lockup */
+.stage::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 60% at 22% 52%,rgb(28 28 26/.62),rgb(28 28 26/0) 72%),
+  radial-gradient(ellipse 38% 34% at 6% 80%,rgb(28 28 26/.75),rgb(28 28 26/0) 78%),
+  linear-gradient(to top,rgb(28 28 26/.96),rgb(28 28 26/0) 9rem),
+  linear-gradient(to top,rgb(28 28 26/.85),rgb(28 28 26/.35))}
+@media (orientation:portrait){.stage::after{background:
+  radial-gradient(ellipse 95% 45% at 50% 50%,rgb(28 28 26/.62),rgb(28 28 26/0) 75%),
+  linear-gradient(to top,rgb(28 28 26/.96),rgb(28 28 26/0) 9rem),
+  linear-gradient(to top,rgb(28 28 26/.85),rgb(28 28 26/.35))}}
+
+/* 4. Content */
+.page{position:relative;z-index:1;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding-left:calc(var(--gutter) + var(--sa-l));padding-right:calc(var(--gutter) + var(--sa-r))}
+.bar--top{padding-top:calc(clamp(1.25rem,3vw,2.25rem) + var(--sa-t))}
+.bar--bottom{padding-top:1.25rem;padding-bottom:calc(clamp(1rem,2.5vw,1.75rem) + var(--sa-b));flex-wrap:wrap}
+.logo{display:block;height:56px;width:auto}
+.eyebrow{font-family:var(--font-eyebrow);font-size:11px;line-height:1.4;letter-spacing:.2em;text-transform:uppercase}
+.pill{border:1px solid var(--n-400);border-radius:999px;padding:.55em 1.25em .5em 1.45em;color:var(--text-primary);white-space:nowrap}
+
+main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  padding:clamp(2rem,6vh,4rem) calc(var(--gutter) + var(--sa-r)) clamp(2rem,6vh,4rem) calc(var(--gutter) + var(--sa-l))}
+h1{display:flex;flex-direction:column;font-weight:300;text-wrap:balance}
+h1 span{display:block}
+.l-the{font-family:var(--font-display-light);font-weight:300;font-size:clamp(1.5rem,3vw,2.5rem);line-height:1;margin-bottom:.15em;padding-left:.08em}
+.l-concrete{font-family:var(--font-display);font-weight:400;font-size:clamp(4rem,14vw,13rem);letter-spacing:-.04em;line-height:.92;margin-left:-.05em}
+.l-group{font-family:var(--font-display-light);font-weight:300;font-size:clamp(2.5rem,8vw,7rem);line-height:1;color:var(--text-secondary);margin-top:.04em}
+
+.rule{display:flex;align-items:center;margin-top:clamp(1.75rem,4vh,2.75rem)}
+.rule::before{content:"";width:64px;height:1px;background:var(--brass)}
+.rule::after{content:"";width:5px;height:5px;background:var(--brass)}
+.tagline{font-family:var(--font-display-light);font-weight:300;font-size:clamp(1.25rem,2vw,1.75rem);line-height:1.2;color:var(--text-primary);margin-top:1rem}
+.status{color:var(--text-secondary);margin-top:1.25rem}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 1.75em;margin-top:clamp(1.75rem,4vh,2.5rem);
+  font-family:var(--font-eyebrow);font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;
+  color:var(--text-primary);background:transparent;border:1px solid var(--off-white);
+  transition:color .25s var(--ease-cursor),border-color .25s var(--ease-cursor)}
+.cta:hover,.cta:focus-visible{color:var(--brass);border-color:var(--brass)}
+.cta:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.foot{color:var(--text-muted-body)}
+
+/* Mobile: centered lockup */
+@media (max-width:760px),(orientation:portrait){
+  .logo{height:44px}
+  main{align-items:center;text-align:center}
+  .l-concrete{margin-left:0}
+  .l-the{padding-left:0}
+  .bar--bottom{justify-content:center;column-gap:1.5rem;row-gap:.35rem}
+}
+/* Deviation: below ~450px the 4rem floor of Archivo Black is wider than the screen; 15.5vw keeps CONCRETE inside the gutters */
+@media (max-width:420px){:root{--gutter:1rem}.l-concrete{font-size:15.5vw}}
+/* Short landscape (phones on their side): deviation from locked sizes so the stack fits 390px of height */
+@media (orientation:landscape) and (max-height:520px){
+  .logo{height:44px}
+  .bar--top{padding-top:calc(.9rem + var(--sa-t))}
+  .bar--bottom{padding-top:.5rem;padding-bottom:calc(.75rem + var(--sa-b))}
+  main{padding-top:.75rem;padding-bottom:.75rem}
+  .l-the{font-size:1.25rem}
+  .l-concrete{font-size:min(14vw,19vh)}
+  .l-group{font-size:min(8vw,10vh)}
+  .rule{margin-top:.9rem}
+  .tagline{margin-top:.5rem}
+  .status{margin-top:.5rem}
+  .cta{margin-top:.9rem}
+}
+
+/* Staged reveal (only when JS runs) */
+.js .reveal{opacity:0;transform:translateY(24px)}
+.is-in .reveal{opacity:1;transform:none;transition:opacity .4s var(--ease-reveal),transform .4s var(--ease-reveal);transition-delay:calc(var(--i)*120ms)}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .stage video{display:none}
+  .cta{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="stage" aria-hidden="true">
+  <video muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+</div>
+<div class="page">
+  <header class="bar bar--top">
+    <img class="logo reveal" style="--i:0" src="assets/img/TCG_Logo_Reverse.png" alt="The Concrete Group" width="900" height="967">
+    <span class="pill eyebrow reveal" style="--i:1">Coming Soon</span>
+  </header>
+  <main>
+    <h1>
+      <span class="l-the reveal" style="--i:2">the</span>
+      <span class="l-concrete reveal" style="--i:3">CONCRETE</span>
+      <span class="l-group reveal" style="--i:4">GROUP</span>
+    </h1>
+    <div class="rule reveal" style="--i:5" aria-hidden="true"></div>
+    <p class="tagline reveal" style="--i:6">We Are Solid.</p>
+    <!-- Status line (ratified 2026-09-28) -->
+    <p class="status eyebrow reveal" style="--i:7">NOW SETTLING.</p>
+    <a class="cta reveal" style="--i:8" href="mailto:YourAgency@theconcretegrp.com">Get in touch</a>
+  </main>
+  <footer class="bar bar--bottom eyebrow foot">
+    <span>© 2026 THE CONCRETE GROUP</span>
+    <span>THECONCRETEGRP.COM</span>
+  </footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Staged reveal: once fonts are ready, never later than 1.2s, never waits on video
+  var done=false;
+  function reveal(){if(!done){done=true;root.classList.add('is-in')}}
+  if(reduce){reveal()}else{
+    setTimeout(reveal,1200);
+    if(document.fonts&&document.fonts.ready){document.fonts.ready.then(reveal)}else{reveal()}
+  }
+
+  // Video: poster only for reduced motion or Save-Data (no request made)
+  var v=document.querySelector('.stage video');
+  if(reduce||(navigator.connection&&navigator.connection.saveData===true)){v.removeAttribute('autoplay');return}
+  v.muted=true;v.autoplay=true;
+  function play(){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+  v.addEventListener('playing',function(){v.classList.add('is-playing')});
+
+  var portrait=matchMedia('(orientation: portrait)');
+  function load(keepTime){
+    var k=portrait.matches?'9x16':'16x9';
+    if(v.dataset.k===k)return;
+    var t=v.currentTime||0;
+    v.dataset.k=k;
+    v.classList.remove('is-playing');
+    v.poster='assets/img/poster_'+k+'.jpg';
+    v.src='assets/video/hero_'+k+'.mp4';
+    if(keepTime&&t){v.addEventListener('loadedmetadata',function(){v.currentTime=t},{once:true})}
+    play();
+  }
+  load(false);
+  if(portrait.addEventListener)portrait.addEventListener('change',function(){load(true)});
+  document.addEventListener('visibilitychange',function(){document.hidden?v.pause():play()});
+})();
+</script>
+</body>
+</html>
