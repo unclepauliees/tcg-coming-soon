@@ -22,7 +22,7 @@ assets/img/favicon-180.png     apple-touch-icon, same method
 
 | Item | Current value | Where to swap |
 |---|---|---|
-| Status line | `NOW SETTLING.` (**ratified 2026-09-28**) | `index.html`: the `<p class="status">` |
+| Status line | `The Pour Is Underway` (renders uppercase; **ratified 2026-09-28**) | `index.html`: the `<p class="status">` |
 | Meta description (still open) | "The Concrete Group. Senior-led PR, communications and brand advisory. Coming soon." | `index.html` `<head>`, 3 places: `meta name="description"`, `og:description`, `twitter:description` (marked with a `[RATIFY]` comment) |
 
 ## Other open items
@@ -51,7 +51,7 @@ assets/img/favicon-180.png     apple-touch-icon, same method
 | the | 3:1 | 4.43 (9:16, f695) |
 | GROUP | 3:1 | 3.51 (1440×900, f080) |
 | Logo (non-text) | 3:1 | 13.52 |
-| We Are Solid. | 4.5:1 | 9.44 |
+| Tagline (We Don’t Chase Noise) | 4.5:1 | 9.44 |
 | Status line | 4.5:1 | 6.49 (844×390, f243) |
 | Button (rest, off-white) | 4.5:1 | 11.55 |
 | Button (hover/focus, brass) | 4.5:1 | 5.32 (1920×1080, f411) |
