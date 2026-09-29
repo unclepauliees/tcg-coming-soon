@@ -23,8 +23,8 @@
 <meta name="twitter:image" content="https://theconcretegrp.com/assets/img/og-image.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
-<link rel="preload" as="image" href="assets/img/poster-sun_9x16.jpg" media="(orientation: portrait)">
-<link rel="preload" as="image" href="assets/img/poster-sun_16x9.jpg" media="(orientation: landscape)">
+<link rel="preload" as="image" href="assets/img/poster-sun30_9x16.jpg" media="(orientation: portrait)">
+<link rel="preload" as="image" href="assets/img/poster-sun30_16x9.jpg" media="(orientation: landscape)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400&family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap">
@@ -51,8 +51,8 @@ body{min-height:100vh;min-height:100svh;color:var(--text-primary);font-family:va
 ::selection{background:var(--concrete-black);color:var(--off-white)}
 
 /* 1. Poster (frame 0) + video, full-bleed */
-.stage{position:fixed;inset:0;z-index:0;background:var(--n-300) url(assets/img/poster-sun_16x9.jpg) center/cover no-repeat}
-@media (orientation:portrait){.stage{background-image:url(assets/img/poster-sun_9x16.jpg)}}
+.stage{position:fixed;inset:0;z-index:0;background:var(--n-300) url(assets/img/poster-sun30_16x9.jpg) center/cover no-repeat}
+@media (orientation:portrait){.stage{background-image:url(assets/img/poster-sun30_9x16.jpg)}}
 .stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease-reveal)}
 .stage video.is-playing{opacity:1}
 /* 2. Scrim: vertical ramp + soft darkening behind the lockup */
@@ -180,8 +180,8 @@ h1 span{display:block}
     var t=v.currentTime||0;
     v.dataset.k=k;
     v.classList.remove('is-playing');
-    v.poster='assets/img/poster-sun_'+k+'.jpg';
-    v.src='assets/video/hero-sun_'+k+'.mp4';
+    v.poster='assets/img/poster-sun30_'+k+'.jpg';
+    v.src='assets/video/hero-sun30_'+k+'.mp4';
     if(keepTime&&t){v.addEventListener('loadedmetadata',function(){v.currentTime=t},{once:true})}
     play();
   }
